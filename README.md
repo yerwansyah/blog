@@ -12,6 +12,7 @@ Initialize Project
 9. bundle install
 10. go up from project folder
 11. init rails project : rails new blog
+12. generate devise : rails generate devise:install
 
 How to Use
 1. Install RVM

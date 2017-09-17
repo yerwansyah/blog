@@ -25,3 +25,10 @@ How to Use for the first time
 
 How to use for regularly
 1. rvm use 2.3.5@blog
+
+
+Step By Step Code
+1. Create rails route : config/routes.rb
+2. Add the controller : app/controllers/
+3. Create action in the controller
+4. Create views page : views/

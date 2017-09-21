@@ -22,6 +22,17 @@ How to Use for the first time
 5. Clone Project
 6. cd blog
 7. bundle install
+8. cp env.sample .env
 
 How to use for regularly
 1. rvm use 2.3.5@blog
+
+
+How to Create db migration file:
+rails generate migration migration_file_name
+
+How to Migrate database
+rake db:migrate
+
+How to Roolback database
+rake db:rollback

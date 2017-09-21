@@ -12,7 +12,10 @@
 
 ActiveRecord::Schema.define(version: 20170918115512) do
 
-  create_table "articles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.datetime "created_at"

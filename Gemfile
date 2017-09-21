@@ -12,6 +12,7 @@ gem 'pundit'
 gem 'pry'
 gem 'dotenv-rails'
 gem 'turbolinks'
+gem 'pg'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
@@ -25,6 +26,5 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
   gem 'uglifier'
 end

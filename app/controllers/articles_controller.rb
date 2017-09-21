@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     @article.save
     redirect_to_articles_show(@article)
-  rescue Exception => e
+  rescue StandardError => e
     render e.message
   end
 

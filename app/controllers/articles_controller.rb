@@ -12,7 +12,7 @@ class ArticlesController < ApplicationController
     else
       render 'new'
     end
-  rescue StandardError => e
+  rescue StandardError
     flash[:notice] = "Error when creating new article"
     render 'new'
   end

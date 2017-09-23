@@ -36,3 +36,6 @@ rake db:migrate
 
 How to Roolback database
 rake db:rollback
+
+How to render and inspect params:
+render plain: params[:article].inspect

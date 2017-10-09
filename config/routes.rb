@@ -5,4 +5,10 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
 
   resources :articles
+
+  namespace :api do
+    get   '/articles' => 'articles#index'
+    get   '/articles/:id' => 'articles#show'
+    post  '/articles' => 'articles#create'
+  end
 end

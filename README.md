@@ -24,9 +24,8 @@ How to Use for the first time
 7. bundle install
 8. cp env.sample .env
 
-How to use for regularly
-1. rvm use 2.3.5@blog
-
+How to run apps use:
+rails server -b 0.0.0.0
 
 How to Create db migration file:
 rails generate migration migration_file_name
@@ -39,3 +38,19 @@ rake db:rollback
 
 How to render and inspect params:
 render plain: params[:article].inspect
+
+How to Setup rspec:
+1. Add the following setup in gem file:
+    group :development, :test do
+      gem 'rspec-rails', '~> 3.5'
+    end
+
+    group :test do
+      gem 'factory_girl_rails', '~> 4.0'
+      gem 'shoulda-matchers', '~> 3.1'
+      gem 'faker'
+      gem 'database_cleaner'
+    end
+2. bundle install
+3. Setup rspec : rails generate rspec:install
+4. Create factories folder : mkdir spec/factories

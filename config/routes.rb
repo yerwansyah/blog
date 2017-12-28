@@ -7,8 +7,10 @@ Rails.application.routes.draw do
   resources :articles
 
   namespace :api do
-    get   '/articles' => 'articles#index'
+    get   '/articles'     => 'articles#index'
     get   '/articles/:id' => 'articles#show'
-    post  '/articles' => 'articles#create'
+    post  '/articles'     => 'articles#create'
+
+    post  '/webhooks'     => 'webhooks#create'
   end
 end
